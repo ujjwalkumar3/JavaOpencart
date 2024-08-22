@@ -1,0 +1,31 @@
+package static_and_this;
+
+public class StaticKeyword {
+	
+	static int a = 10; //static variable
+	//static methods can access static stuff directly
+	int b = 20; //non-static variable
+	
+	static void m1() {
+		System.out.println("this is m1 static method");
+	}
+	
+	void m2() {
+		System.out.println("this is m2 non static method");
+	}
+
+	public static void main(String[] args) {
+		// direct access of static variable without creating object
+		System.out.println(a);
+		m1();
+		
+//		System.out.println(b); //cannot access, b is non static
+//		m2();
+		
+		StaticKeyword sd = new StaticKeyword();
+		System.out.println(sd.b);
+		sd.m2();
+
+	}
+
+}

@@ -1,0 +1,36 @@
+package static_and_this;
+
+public class ThisKeyword {
+	int x, y;
+	
+	void get(int x, int y) {
+		x=y=0;
+	}
+	
+	void set(int a, int b) {
+		x=a;
+		y=b;
+	}
+	
+	void setData(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	
+//	ThisKeyword(int x, int y){
+//		this.x=x;
+//		this.y=y;
+//	}
+	
+	void display() {
+		System.out.println(x);
+		System.out.println(y);
+	}
+	
+	public static void main(String[] args) {
+		ThisKeyword obj = new ThisKeyword();
+		obj.set(100, 200);
+		obj.setData(10, 20);
+		obj.display();
+	}
+}

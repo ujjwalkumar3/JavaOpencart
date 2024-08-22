@@ -1,0 +1,5 @@
+package static_and_this;
+
+public class ThisKeyword {
+
+}

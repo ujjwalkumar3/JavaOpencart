@@ -1,0 +1,16 @@
+package overriding;
+
+public class Animal {
+	String color = "white";
+
+}
+
+class Dog extends Animal{
+	String color = "black";
+	//even though overriding but want old value
+	//immediate parent class
+	
+	void displayColor() {
+		System.out.println(super.color);
+	}
+}

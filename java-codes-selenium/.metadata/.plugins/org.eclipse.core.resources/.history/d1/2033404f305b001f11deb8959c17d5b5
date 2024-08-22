@@ -1,0 +1,12 @@
+package overriding;
+
+public class Animal_SuperKeyword {
+	//immediate parent class
+	String color = "white";
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

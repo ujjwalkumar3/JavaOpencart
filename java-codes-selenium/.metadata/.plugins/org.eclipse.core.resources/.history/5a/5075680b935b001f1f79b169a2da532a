@@ -1,0 +1,15 @@
+package interfaces;
+
+public class MutipleInheritance implements Interface_Test, Interface_Test2 {
+	public void m1() {
+		System.out.println(x);
+	}
+	public void m2() {
+		System.out.println(y);
+	}
+	public static void main(String[] args) {
+		MutipleInheritance mobj = new MutipleInheritance();
+		mobj.m1();
+		mobj.m2();
+	}
+}

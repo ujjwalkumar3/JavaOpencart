@@ -1,0 +1,5 @@
+package day18_TestNG_dependency_grouping;
+
+public class PaymentTests {
+
+}

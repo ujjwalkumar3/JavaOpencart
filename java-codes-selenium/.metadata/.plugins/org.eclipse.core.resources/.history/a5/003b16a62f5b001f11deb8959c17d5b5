@@ -1,0 +1,26 @@
+package overriding;
+
+class Test{
+	int x = 100;
+}
+
+class Test1{
+	final int x = 100;
+}
+
+public class FinalKeyword {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Test t = new Test();
+		System.out.println(t.x);
+		t.x=200;
+		System.out.println(t.x);
+		
+		Test1 t1 = new Test1();
+		System.out.println(t1.x);
+//		t1.x=200;
+		System.out.println(t1.x);
+	}
+
+}
